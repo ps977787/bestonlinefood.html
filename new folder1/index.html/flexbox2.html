@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox tutorial</title>
+    <style>
+        body{
+            color:white;
+        }
+     .container{
+         border:2px solid green;
+         width:100%;
+         height:1000px;
+         display:flex;
+         justify-content: space-between; 
+         background-image: url('pk.jpg');
+         flex-wrap: wrap;
+        
+        }
+        .item{  border:2px solid green;
+           margin:3px;
+           padding:3px;
+           width:200px;
+           height: 200px;
+        }
+        #item2{
+            width:600px;
+            height:70px;
+            margin-top:3px;
+            margin-left:100px;
+        }
+       #item1{
+            background-color: white;
+            height:110px;
+            width:110px;
+        }
+        #item1 img{
+            margin:auto;
+            width:100px;
+            height:100px;
+            margin-top:3px;
+        }
+        .item h2{
+            display:inline-block;
+        }
+    .top ul li{
+        display:inline-block;
+        margin-right: 55px;
+
+    }
+   .btn{
+       width:70px;
+       margin:10px;
+       padding:3px;
+
+    }
+     .break{
+         border:2px solid green;
+         flex-basis:25%;
+         height:0px;
+         justify-items:right;
+         margin:3px;
+        
+    }
+    #item5{
+        border:2px solid blue;
+        justify-items: end;
+        margin:2px;
+    }
+    .but1{
+        align-items: center;
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">
+            <img src="images.png" alt="" srcset="">
+            <div>
+                <h2> BASANTPUR GYM POINT</h2>
+        </div>
+        </div>
+        <div class="item" id="item2">
+            <header class="top">
+            <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Timing</li>
+                        <li>Charges</li>
+                        <li>features</li>
+                    </ul>
+                    </nav>
+                    </header>
+        </div>
+        <div class="item" id="item3">
+            <button href="#" class="btn">call us</button>
+            <button href="#" class="btn">query</button>
+        </div>
+        <br>
+            <div class="break" id="item4">
+            <form action="pk.php">
+                <input type="text" name="myname" placeholder="enter your name">
+                <input type="number" name="myage" placeholder="enter your age">
+                <input type="email" name="myemail" placeholder="enter your email">
+                <input type="number" name="myname" placeholder="enter your mob. number">
+               <button href="#" class="btn">submit now</button>
+               <button href="#" class="btn">reset</button>
+            </form>
+    </div>
+    <div class="item" id="item5">
+      <input type="text" name="chat" plceholder="chat with us">
+        <button href="#" class="but1">chat with us</button>
+    </div>
+    </div>
+</body>
+</html>

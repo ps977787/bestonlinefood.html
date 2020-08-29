@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudoselector</title>
+</head>
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        background-color:black;
+        color:white;
+    }
+    .navbar li{
+             display:inline-block;
+             padding:30px;
+    }
+    .top{
+        display:block;
+        width:600px;
+        margin:auto;
+        text-align:center;
+        margin-top:200px;
+    }
+    .top p::before{
+        content:"this is me";
+        display:block;
+        justify-items:center;
+        font-size:2em;
+        position:stretch;
+    }
+   body{
+        background:url('https://source.unsplash.com/user/erondu/1600x900');
+        top:0;
+        left:0;
+        z-index:-1;
+        width:100%;
+        height:100%;
+        position:absolute;
+        opacity:10;
+    }
+</style>
+<body>
+    <header>
+    <nav class="navbar">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact us</li>
+            <li>features</li>
+        </ul>
+    </nav>
+    </header>
+    <section class="top">
+       <h1 >WELCOME TO THE CODING WORLD</h1> 
+       <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, adipisci quasi dolor nostrum fugit sapiente voluptate deleniti nesciunt, delectus minus explicabo non! Minima, repudiandae laudantium. Dolorem ipsam id molestiae fuga totam, quod aliquid neque? Fugiat.</P>
+    </section>
+</body>
+</html>

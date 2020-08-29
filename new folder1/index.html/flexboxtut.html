@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox html</title>
+    <style>
+        .container{
+            border:2px solid black;
+            height:450px;
+            width:450px;
+            display:flex;
+            /* flex-wrap:wrap; */
+            /* flex-wrap:wrap-reverse;*/
+            /* flex-flow:column-reverse; */
+            /* flex-direction:column; */
+            /* flex-flow:column-reverse; */
+             /* flex-direction:row-reverse; */
+             /* align-items:stretch;  */
+        }
+        .item{
+            border:2px solid red;
+            background-color:rgb(77, 77, 156);
+            width:200px;
+            height:200px;
+            margin:3px;
+            padding:3px;
+        }
+        #item1{
+            /* order:3; */
+            flex-grow:3;
+        }
+    </style>
+</head>
+<body>
+    <h1>flexbox tutorial</h1>
+    <div class="container">
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+    </div>
+</body>
+</html>
